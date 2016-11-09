@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+    background-color: #D7FCD4;
+
+}
+#resume{
+	margin: 0 auto;
+	display: block;
+	width: 80%;
+	height: 80%;
+}
+.bold{
+	font-size: 20px;
+	font-weight: bold;
+}
+.topic{
+	font-weight: bold;
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+.about{
+	text-align: center;
+}
+
+#navi{
+	list-style: none;
+}
+#navi li p{
+	margin: 0;
+	padding-top: 5px;
+
+}
+
+#navi li{
+	display: inline-block; 
+    margin: 0;
+	float: left;
+    background-color: #83BAB8;
+	font-size: 40px;
+	text-align: center;
+	/*border: 1px solid black;*/
+	padding-right: 40px;
+	padding-left: 40px;
+
+}
+li a{
+    /*border: 1px solid black;*/
+    padding-top: 5px;
+    padding-bottom: 1px;
+	text-decoration: none;	
+	color: black;
+    background-color: #83BAB8;
+}
+li a:hover {
+    background-color: rgb(165, 123, 31);
+}
+.active{
+	background-color: rgba(165, 123, 31,.5);
+	height: 40px;
+	font-style: bold;
+}
+.banner{
+	list-style: none;
+    margin: 0;
+	background-color: #83BAB8;
+	height: 50px;
+}
+.small_pic{
+	width: 200px;
+	height: 200px;
+	float: center;
+
+}
+.contactHeader{
+	font: bold;
+}
+.bullets{
+	line-height: 40px;
+}
+.list{
+	text-align: center;
+}
+.text{
+	text-align: center;
+	padding-right: 450px;
+	padding-left: 450px;
+}
+
+.SQL {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 300px;
+    height: 200px;
+}
+
+.SQL:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /* For Tablets: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .text {
+        padding: 0;
+    }
+    .col-3{
+    	display: none;
+    }
+}
