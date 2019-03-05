@@ -75,6 +75,10 @@ li a:hover {
 .contactHeader{
 	font: bold;
 }
+.contactHeader::before{
+    content: "Contact Me: ";
+    font-weight: bold;
+}
 .bullets{
 	line-height: 40px;
 }
